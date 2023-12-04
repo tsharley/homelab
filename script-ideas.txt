@@ -1,0 +1,51 @@
+[36m/Library/[1;34mScripts[0m/
+├──[0m [1;34mColorSync
+├──[0m [1;34m'Folder Actions'
+│  ├──[0m 'Attach Script to Folder.
+│  ├──[0m 'Disable Folder Actions.
+│  ├──[0m 'Enable Folder Actions.
+│  └──[0m 'Remove Folder Actions.
+├──[0m [1;34m'Folder Action Scripts'
+│  ├──[0m 'add - new item alert.
+│  ├──[0m 'close - close sub-folders.
+│  ├──[0m 'convert - PostScript to PDF.
+│  ├──[0m 'Image - Add Icon.
+│  ├──[0m 'Image - Duplicate as JPEG.
+│  ├──[0m 'Image - Duplicate as PNG.
+│  ├──[0m 'Image - Duplicate as TIFF.
+│  ├──[0m 'Image - Flip Horizontal.
+│  ├──[0m 'Image - Flip Vertical.
+│  ├──[0m 'Image - Info to Comment.
+│  ├──[0m 'Image - Rotate Left.
+│  ├──[0m 'Image - Rotate Right.
+│  └──[0m 'open - show comments in dialog.
+├──[0m [1;34m'Printing Scripts'
+│  ├──[0m 'About "Convert" Scripts.
+│  ├──[0m 'About "Print Window" Scripts.
+│  ├──[0m 'Convert To PDF.
+│  ├──[0m 'Convert To PostScript.
+│  ├──[0m 'Print Window.
+│  └──[0m 'Print Window With Subfolders.
+├──[0m [1;34m'Script Editor Scripts'
+│  ├──[0m [1;34m'Action Clauses'
+│  ├──[0m [1;34mConditionals
+│  ├──[0m [1;34mDialogs
+│  ├──[0m [1;34m'Error Handlers'
+│  ├──[0m [1;34m'Folder Actions Handlers'
+│  ├──[0m [1;34m'Image Manipulation'
+│  ├──[0m [1;34m'Iterate Items'
+│  ├──[0m [1;34m'Repeat Routines'
+│  ├──[0m [1;34m'String Comparison'
+│  ├──[0m [1;34m'Tell Blocks'
+│  ├──[0m 'About these scripts....
+│  └──[0m 'Comment Tags.
+├──[0m [1;34m'UI Element Scripts'
+│  ├──[0m [1;33m'Get User Name.applescript
+│  ├──[0m [1;33m'Key Down-Up.applescript
+│  ├──[0m [1;33m'Probe Menu Bar.applescript
+│  ├──[0m [1;33m'Probe Window.applescript
+│  └──[0m [1;33m'Set Output Volume.applescript
+└──[0m [1;34mVoiceOver
+   ├──[0m [1;32m'Time Of Day.applescript'
+   ├──[0m [1;32m'Unread Message Count.applescript'
+   └──[0m [1;32m'VoiceOver Screenshot To Mail.applescript*

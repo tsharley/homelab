@@ -1,0 +1,12 @@
+username: ts
+packages:
+  - vim
+  - git
+  - curl
+  - wget
+  - unzip
+  - zip
+  - htop
+  - exa
+  - tmux
+  - micro

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#shellcheck disable=SC2027,SC2046,SC2154
+###############################################################################%
+
+
+_usage_(){
+	
+}
+
+mk_dirs_from_file() {
+    cat "${1}" | while read -r line; do
+        mkdir -p "${HOME}${line}"
+    done
+}
+
+
+# Make directories
+mk_dirs_from_file "${INSTALL_DIR}/dirs.lst"
+
