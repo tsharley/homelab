@@ -1,0 +1,10 @@
+from rich import console
+
+
+rich = console.Console()
+
+def pprint(func):
+    def wrapper(*args, **kwargs):
+        rich.print("[bold green]Calling[/bold green] [bold blue]{}[/bold blue]".format(func.__name__))
+        return func(*args, **kwargs)
+    return wrapper

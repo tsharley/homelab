@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+###############################################################################%
+
+
+_display_tsm_() {
+	clear; echo; echo; figurine -f "Roman.flf" tsmetallic
+	 lorem -l 10 --cols 91 | rainbow; echo; echo
+}
+
+_main_() {
+	for i in {1..30}; do
+		_display_tsm_
+		sleep 0.5
+	done
+}
+
+_main_ "$@"

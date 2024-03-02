@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+##############################################################################%
+import shlex
+
+cline = '''curl -X GET "https://api.cloudflare.com/client/v4/user/tokens/verify" \
+     -H "Authorization: Bearer EI1QHA6pth57OL5Mk7b0B7zI6a_MdBWxlv9CJTRW" \
+     -H "Content-Type:application/json | jq"
+     '''
+args = shlex.split(cline)
+print(args)

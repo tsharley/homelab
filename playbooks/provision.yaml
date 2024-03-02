@@ -1,0 +1,58 @@
+---
+- name: Provision essential packages
+  hosts: all
+  remote_user: root
+  gather_facts: yes
+
+  tasks:
+  - name: Update all packages to their latest version
+    ansible.builtin.apt:
+      name: "*"
+      state: latest
+
+  - name: Install packages common to all system types
+    ansible.builtin.apt:
+      pkg:
+      - micro
+      - git
+      - wget
+      - curl
+      - sudo
+      - exa
+      - most
+      - ca-certificates
+      - gnupg
+      - zip
+      - unzip
+      - vim
+      - xterm
+      - xdg-desktop-portal
+      - xdg-utils
+      - python3-virtualenvwrapper
+      - rbenv
+      - units
+
+- name: Install configs and QoL enhancements
+  hosts: all
+  become: yes
+  gather_facts: yes
+
+  tasks:
+  - name: Clone dotfiles repo
+    ansible.builtin.git:
+      repo: https://github.com/tsharley/dotfiles.git
+      dest: ~/.dotfiles
+      clone: yes
+      depth: 2
+#
+#  - name: Install dotfiles
+#    ansible.builtin.shell: ~/.dotfiles/install/install.sh
+#
+#  - name: Copy user bin scripts
+#    ansible.builtin.copy:
+#      src: ~/.local/bin
+#      dest: ~/.local/bin
+#      mode: 0755
+#      owner: root
+#      group: root
+
